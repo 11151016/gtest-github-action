@@ -20,6 +20,7 @@ add_executable(
   cleancode
   PrintColorCode.cpp
   PrintColorCode.Tests.cpp
+  PrintColorCode1.Tests.cpp
   StringCalculator.cpp
   StringCalculator.Tests.cpp
   
