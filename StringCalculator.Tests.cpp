@@ -22,3 +22,14 @@ TEST(string_calculator_add_when_passed_a_single_number,returns_sum_Val_for_both_
   //Assert
   ASSERT_EQ(actualSum,expectedsum);
 }
+
+TEST(string_calculator_add_when_passed_a_single_number,returns_same_Val_for_single__string){
+ //Arrange
+  StringCalculator calculator;
+  string input="10";
+  int expectedsum=10;
+  //Act
+  int actualSum=calculator.Add(input);
+  //Assert
+  ASSERT_EQ(actualSum,expectedsum);
+}
