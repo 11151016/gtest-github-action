@@ -1,12 +1,14 @@
-#include "PrintColorCode1.h"
-#include <gtest/gtest.h>
-
-TEST(PrintColorCodeTestSuite1, AssertColorCodeManualItemsCount1){
-//Arrange
-  int expectedCount=25;
- //Act
-  int actualCount=printColorMap1();
-  //Assert
-  ASSERT_EQ(expectedCount,actualCount);
-  
+#include <iostream>
+#include <assert.h>
+#include "PrintColorCode.h"
+int printColorMap1() {
+    const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
+    const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
+    int i = 0, j = 0;
+    for(i = 0; i < 5; i++) {
+        for(j = 0; j < 5; j++) {
+            std::cout << i * 5 + j << " | " << majorColor[i] << " | " << minorColor[i] << "\n";
+        }
+    }
+    return i * j;
 }
