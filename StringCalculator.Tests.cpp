@@ -34,11 +34,11 @@ TEST(string_calculator_add_when_passed_a_single_number,returns_same_Val_for_sing
   ASSERT_EQ(actualSum,expectedsum);
 }
 
-TEST(string_calculator_add_when_passed_a_single_huge_number,returns_same_Val_for_input_greater_string){
+TEST(string_calculator_add_when_passed_a_single_huge_number,returns_zero_Val_for_input_greater_string){
  //Arrange
   StringCalculator calculator;
   string input="2000";
-  int expectedsum=2000;
+  int expectedsum=0;
   //Act
   int actualSum=calculator.Add(input);
   //Assert
